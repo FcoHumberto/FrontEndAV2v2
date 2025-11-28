@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Criar Conta</title>
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css.css">
+        
+        <script>
+            fetch('cabecalho.html')
+            .then(resp => resp.text())
+            .then(html => document.getElementById('menu').innerHTML = html);
+            fetch('rodape.html')
+            .then(resp => resp.text())
+            .then(html => document.getElementById('disclaimer').innerHTML = html);
+        </script>
+    </head>
+    <body>
+        <div id="menu"></div>
+        
+        <div class="caixa2 central">
+            <form action="home.html" class="pulinho">
+        
+                <label for="nome" class="necessario">Nome</label><br>
+                <input type="text" id="nome" name="nome" class="container" required><br><br>
+                
+                <label for="senha" class="necessario">Senha</label><br>
+                <input type="password" id="senha" name="senha" class="container" required><br><br>
+                
+                <label for="email" class="necessario">Email</label><br>
+                <input type="email" id="email" name="email" class="container" required><br><br> 
+                
+                <input type="submit" class="botao confirma" value="Criar conta"><br><br>
+                <input type="reset" class="botao desiste" value="Limpar todos os campos">
+            
+            </form>
+        </div>
+        
+        <div id="disclaimer"></div>
+    </body>
+</html>

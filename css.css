@@ -1,0 +1,226 @@
+/*---Elements---*/
+body{
+    background:#f3f3f3;
+    font-family: Arial;
+}
+
+.table1 {
+    table{
+        align-items: center;
+        width: 90%;
+        margin: auto;
+    }  
+    th{
+        border: 1px solid #999999;
+        text-align: center;
+    }
+    tr td{
+        border: 1px solid #999999;
+        text-align: center;
+    }
+}
+
+.table2{
+    table{
+        text-align: left;
+        width: 100%;
+        margin: auto;
+        border: hidden;
+    }
+    tr{
+        border: 2px solid #999999;
+    }
+    img{
+    width: 600px;
+    height: 150px;
+    max-width: 100%
+    }
+}
+
+
+/*---Alinhamento---*/
+.pulinho{
+    margin-left: 4%;
+    margin-right: auto;
+}
+
+.central{
+    text-align: center;
+    margin: auto;
+}
+
+.esquerda{
+    text-align: left;
+}
+
+.direita{
+    text-align: right;
+}
+
+/*---Botões---*/
+.botao{
+    width: 30%;
+    height: 7%;
+    max-width: 250px;
+    max-height: 40px;
+    min-width: 200px;
+    min-height: 15px;
+    border-radius: 10px;
+    margin-right: auto;
+    color: #ffffff;
+}
+
+.botao2{
+    width: 30%;
+    height: 15%;
+    max-width: 200px;
+    max-height: 100px;
+    min-width: 180px;
+    min-height: 50px;
+    border-radius: 10px;
+    margin-right: auto;
+    color: #ffffff;
+}
+
+.botao3{
+    width: 30%;
+    height: 7%;
+    max-width: 60px;
+    max-height: 30px;
+    min-width: 50px;
+    min-height: 30px;
+    border-radius: 10px;
+    margin-right: auto;
+    color: #ffffff;
+}
+
+.botao4{
+    width: 30%;
+    height: 7%;
+    max-width: 150px;
+    max-height: 40px;
+    min-width: 150px;
+    min-height: 15px;
+    border-radius: 10px;
+    margin-right: auto;
+    color: #ffffff;
+}
+
+.confirma{
+    background-color: #32a852; 
+    border: outset #15702e 2px;
+}
+
+.desiste{
+    background-color: #dc3545; 
+    border: outset #ab1d2b 2px;
+}
+
+.edita{
+    background-color: #247ef2; 
+    border: outset #0f63d1 2px;
+}
+
+.volta{
+    background-color: #666666;
+    border: outset #000000 2px;
+}
+
+/*---Containers---*/
+.container{
+    margin: auto;
+    height: 7%;
+    width: 30%;
+    min-width: 200px;
+    min-height: 15px;
+    max-width: 250px;
+    max-height: 40px;
+    border-radius: 6px;
+    border: solid #e3e3e3 1px;
+
+}
+
+.container2{
+    margin-right: auto;
+    width: 80%;
+    height: 10%;
+    min-width: 200px;
+    min-height: 15px;
+    border-radius: 6px;
+    border: solid #e3e3e3 1px;
+}
+
+
+/*---Caixas---*/
+.caixa1{
+    background-color: #ffffff;
+    width: 30%;
+    height: 40%;
+    max-width: 530px;
+    border:1px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 2%;
+    margin:auto;
+}
+
+.caixa2{
+    background-color: #ffffff;
+    width: 15%;
+    min-width: 300px;
+    max-width: 530px;
+    height: 40%;
+    border:1px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 2%;
+    margin: auto;
+}
+
+.caixa3{
+    background-color: #ffffff;
+    width: 80%;
+    min-width: 100px;
+    max-width: 2000px;
+    height: 80%;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 2%;
+    margin: auto;
+}
+
+.caixa4{
+    background-color: #ffffff;
+    width: 60%;
+    min-width: 100px;
+    max-width: 2000px;
+    height: 80%;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 2%;
+    margin: auto;
+}
+
+.caixa5{
+    background-color: #ffffff;
+    width: 40%;
+    min-width: 220px;
+    max-width: 400px;
+    height: 80%;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 2%;
+    margin: auto;
+}
+
+/*---Mudanças na Fonte---*/
+.necessario{
+    color: #ff0000;
+}
+
+.addedt{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.comodiminuiafonte{
+    font-size: 20px;
+}

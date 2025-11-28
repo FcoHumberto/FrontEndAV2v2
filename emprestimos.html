@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Empréstimos - Empresa 1</title>
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css.css">
+        
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootsrap.bundle.min.js">
+        </script>
+        
+        <script>
+            fetch('cabecalho2.html')
+            .then(resp => resp.text())
+            .then(html => document.getElementById('menu').innerHTML = html);
+        
+            fetch('rodape.html')
+            .then(resp => resp.text())
+            .then(html => document.getElementById('disclaimer').innerHTML = html);
+            
+            function excluir(){
+                const marcados = document.querySelectorAll('input[name="sel[]"]:checked');
+                
+                if(marcados.length === 0){
+                    alert("Selecione um registro para excluir.");
+                    return;
+                }
+                
+                const id = marcados[0].value;
+                window.location.href="excluir2.html";
+            }
+            
+           function editar(){
+                const marcados = document.querySelectorAll('input[name="sel[]"]:checked');
+                
+                if(marcados.length === 0){
+                    alert("Selecione um registro para editar.");
+                    return;
+                }
+                
+                if(marcados.length > 1){
+                    alert("Selecione apenas um registro para editar");
+                    return;
+                }
+                
+                const id = marcados[0].value;
+                window.location.href="emprestimos_editar.html";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="menu"></div>
+        <h1 class="central">Empréstimos - Empresa 1</h1>
+        <p class="central">Aqui você poderá consultar, adicionar, remover e modificar informações dos empréstimos realizados.</p><br>
+                
+        <div class="caixa4 central">
+                    <button type="button"
+                            class="botao2 volta"
+                            onclick="window.location.href='minhaempresa.html'">
+                            Voltar</button>&emsp;&emsp;
+
+                    <button type="button"
+                            class="botao2 confirma"
+                            onclick="window.location.href='emprestimos_adicionar.html'">
+                            Adicionar Empréstimo</button>&emsp;&emsp;
+
+                    <button type="button"
+                            class="botao2 edita"
+                            onclick="javascript:editar();">
+                            Modificar Empréstimo</button>&emsp;&emsp;
+
+                   <button type="button"
+                            class="botao2 desiste"
+                            onclick="javascript:excluir();">
+                            Remover Empréstimo</button>&emsp;&emsp;
+        </div><br><br>
+        
+        <div class="caixa3">
+            
+            <div class="central table1">
+                <table>
+                    
+                    <thead>
+                        <tr>   
+                            <th style="background-color: #32a852;"></th>
+                            <th>LID</th>
+                            <th>Banco</th>
+                            <th>Valor do Empréstimo</th>
+                            <th>Realizado em</th>
+                            <th>A ser pago até</th>
+                            <th>Dias de atraso</th>
+                            <th>Valor do Juros</th>
+                            <th>Tipo de Juros</th>
+                            <th>Valor Total</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        
+                        <tr>
+                            <td><input type="checkbox" name="sel[]" value="1" id="Empresas"></td>
+                            <td>1</td>
+                            <td>Banco 1</td>
+                            <td>R$10.000,00</td>
+                            <td>20/10/2025</td>
+                            <td>20/12/2025</td>
+                            <td>0</td>
+                            <td>0,15%</td>
+                            <td>Dia</td>
+                            <td>R$10.915,00</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" name="sel[]" value="2"></td>
+                            <td>2</td>
+                            <td>Banco 2</td>
+                            <td>R$5.000,00</td>
+                            <td>10/11/2025</td>
+                            <td>10/12/2025</td>
+                            <td>0</td>
+                            <td>2,5%</td>
+                            <td>Mês</td>
+                            <td>R$5.125,00</td>
+                       </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        
+        <div id="disclaimer"></div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Navegação Dinâmica</title>
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css.css">
+        
+        <script>
+            fetch('cabecalho2.html')
+            .then(resp => resp.text())
+            .then(html => document.getElementById('menu').innerHTML = html);
+            fetch('rodape.html')
+            .then(resp => resp.text())
+            .then(html => document.getElementById('disclaimer').innerHTML = html);
+        </script>
+    </head>
+    <body class="central">
+        <div id="menu"></div>
+ 
+        <div class="caixa5">        
+        <button type="button" class="botao4 confirma" onclick="window.location.href='home.html'">Página Inicial</button><br><br>
+        
+        <button type="button" class="botao4 confirma" onclick="window.location.href='sobre2.html'">Sobre</button><br><br>
+        
+        <button type="button" class="botao4 confirma" onclick="window.location.href='minhaempresa.html'">Minha Empresa</button><br><br>
+        
+        <button type="button" class="botao4 desiste" onclick="window.location.href='index.html'">Sair</button><br><br>
+        </div>
+        
+        <div id="disclaimer"></div>
+    </body>
+</html>

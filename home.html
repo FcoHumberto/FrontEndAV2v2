@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Página Inicial</title>
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css.css">
+        
+        <script>
+            fetch('cabecalho2.html')
+            .then(resp => resp.text())
+            .then(html => document.getElementById('menu').innerHTML = html);
+            fetch('rodape.html')
+            .then(resp => resp.text())
+            .then(html => document.getElementById('disclaimer').innerHTML = html);
+        </script>
+    </head>
+    <body>
+        <div id="menu"></div>
+        
+        <h1 class="central">Bem-vindo ao Sistema de Finanças</h1><br>
+        
+        <div class="esquerda pulinho">
+            <h3>O que é o Sistema de Finanças?</h3>
+            <p>O Sistema de Finanças é um sistema que irá lhe auxiliar a controlar
+                empréstimos financeiros tomados pela empresa.</p><br>
+            
+            <h3>O que faz?</h3>
+            <p>Ele lhe permite adicionar e remover empréstimos feitos pela sua empresa,
+                colocando informações sobre valores, prazos de pagamento e taxa de juros.</p><br>
+            
+            <h3>Como usar?</h3>
+            <p>Caso haja alguma dúvida de como usar o Sistema de Finanças, basta ver abaixo.</p>
+        </div>
+        
+            <div class="caixa3 table2">
+                
+                <table>
+                    
+                    <tr>
+                        <td><img src="imagens/VoltarPrincipal.jpeg" alt="Canto superior esquerdo." ></td>
+                        <td style="padding: 1%">Você sempre poderá retornar à página principal apertando em "Sistema de Finanças",
+                                                no canto superior esquerdo da tela.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="imagens/NavDin.jpeg" alt="Canto superior esquerdo." ></td>
+                        <td style="padding: 1%">Caso sua tela seja muito pequena, você pode clicar no ícone do canto superior direito
+                                                para acessar o menu de Navegação Dinâmica.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="imagens/Home.jpeg" alt="Canto superior direito."></td>
+                        <td style="padding: 1%">Para começar, clique em "Minha Empresa", no canto superior direito da tela.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="imagens/AdicionarEmpresaB.jpeg" alt="Segundo botão (verde)."></td>
+                        <td style="padding: 1%">Para adicioanar novas empresas que estejam em seu domínio, clique em "Adicionar Empresa"</td>                        
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="imagens/AdicionarEmpresa.jpeg" alt="Formulário com nome, cnpj e número de empréstimos não pagos da empresa."></td>
+                        <td style="padding: 1%">Você será levado para esse formulário e deverá preencher os campos corretamente.</td>                        
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="imagens/EmpresaGeral.jpeg" alt="Botões cinza, verde, azul e vermelho, nessa ordem, com uma tabela e checkbox abaixo."></td>
+                        <td style="padding: 1%">De volta à página "Minha Empresa", você poderá selecionar a empresa desajada no
+                                                checkbox (1) e então clicar em "Modificar Empresa" (2) ou "Excluir Empresa" (3),
+                                                que removerá a empresa selecionada. Ou você pode clicar em "Voltar" (4) para
+                                                retornar à página principal.</td>                        
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="imagens/EditarEmpresa.jpeg" alt="Formulário com as mesmas informações do 'Adicionar Empresa'."></td>
+                        <td style="padding: 1%">Clicando em "Editar Empresa", você poderá alterar as informações desejadas livremente,
+                                                mas nenhum campo deve ficar vazio.</td>                        
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="imagens/EmprestimoIr.jpeg" alt="Botão verde dentro da tabela com o número de empréstimos não pagos dentro."></td>
+                        <td style="padding: 1%">Você pode clicar no presente no campo "Empréstimos Atualmente" para acessar os
+                                                empréstimos daquela empresa específica.</td>                        
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="imagens/AdicionarEmprestimoB.jpeg" alt="Introdução à interface de empréstimos."></td>
+                        <td style="padding: 1%">A interface de empréstimos da empresa é bem semelhante à interface de Empresas.<br>
+                                                Clique em "Adicionar Empréstimo" (botão verde) para registrar um novo empréstimo.</td>                        
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="imagens/AdicionarEmprestimo.jpeg" alt="Formulário com as informações do empréstimo."></td>
+                        <td style="padding: 1%">Você será levado para esse formulário e deverá preencher os campos corretamente.</td>                        
+                    </tr>
+                
+                    <tr>
+                        <td><img src="imagens/EmprestimoGeral.jpeg" alt="Botões cinza, verde, azul e vermelho, nessa ordem, com uma tabela e checkbox abaixo."></td>
+                        <td style="padding: 1%">De volta à página dos empréstimos, você poderá selecionar o empréstimo desajado no
+                                                checkbox (1) e então clicar em "Modificar Empréstimo" (2) ou "Excluir Empresa" (3),
+                                                que removerá a empresa selecionada. Ou você pode clicar em "Voltar" (4) para
+                                                retornar à página "Minhas Empresas".</td>                        
+                    </tr>
+
+                    <tr>
+                        <td><img src="imagens/EditarEmprestimo.jpeg" alt="Formulário com as mesmas informações do 'Adicionar Empréstimo'."></td>
+                        <td style="padding: 1%">Clicando em "Modificar Empréstimo", você pdoerá alterar as informações desejadas livremente,
+                                                mas nenhum campo deve ficar vazio.</td>                        
+                    </tr>
+                
+                    <tr>
+                        <td><img src="imagens/Logoff.jpeg" alt="Botão vermelho no canto superior direito para fazer logoff."></td>
+                        <td style="padding: 1%">Ao finalizar todas as suas operações, você pode clicar em "Sair", no canto superior direito da tela,
+                                                em vermelho, para realizar o logoff.</td>                        
+                    </tr>
+                
+                </table>
+                
+            </div>
+        
+        <div id="disclaimer"></div>
+        
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Sobre</title>
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css.css">
+        
+        <script>
+            fetch('cabecalho.html')
+            .then(resp => resp.text())
+            .then(html => document.getElementById('menu').innerHTML = html);
+            fetch('rodape.html')
+            .then(resp => resp.text())
+            .then(html => document.getElementById('disclaimer').innerHTML = html);
+        
+        </script>
+    </head>
+    <body>
+        <div id="menu"></div>
+        
+        <div class="caixa1 esquerda">
+         <p>Bom dia, eu sou um estudante de Análise e Desenvolvimento de Sistemas da Universidade Uninassau.</p>
+        
+         <p>Estudo durante a manhã e esse site foi feito como nota de AV2.</p>
+         
+         <p>O tema me entregue pelo professor foi:<br>
+            "Empréstimos bancários<br>
+            Controle de empréstimos financeiros tomados pela empresa, com informações sobre valores, prazos de pagamento e taxas de juros."</p>
+         
+         <p>Matéria: Front-End Frameworks.</p>
+         
+         <p>Professor: Hiran Savir.</p>
+        </div>
+        
+        <div id="disclaimer"></div>
+    </body>
+</html>
